@@ -110,17 +110,34 @@
         <h2>Contact Us</h2>
         <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
 
-            Full Name
+        <form action="#" method="post">
+            <p>
+                <label for="full-name">Full Name</label>
+                <input type="text" name="user-full-name" id="full-name" required>
+            </p>
 
-            Email Address
+            <p>
+                <label for="email-address">Email Address</label>
+                <input type="email" name="user-email-address" id="email-address" required>
+            </p>
+            
+            <p>
+                <label for="company-name">Company Name</label>
+                <input type="text" name="user-company-name" id="company-name" required>
+            </p>
 
-            Company Name
+            <p>
+                <label for="industry">Industry</label>
+                <input type="text" name="user-industry" id="industry" required> 
+            </p>
 
-            Industry
+            <p>
+                <label for="help-request">How can we help you?</label>
+                <textarea name="user-help-request" id="help-request" rows="2" required></textarea>             
+            </p>
 
-            How can we help you?
-
-            Submit
+            <input type="submit">
+        </form>
     
         <p>&copy; 2025 Vanguard. All rights reserved.</p>
         <address>
