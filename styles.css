@@ -89,7 +89,7 @@ header {
     background: var(--black);
     padding-top: 5vw;
     padding-bottom: 5vw;
-    box-shadow: 0 20px 20px var(--blue);
+    box-shadow: 0 20px 25px var(--blue);
 }
 
 /*HEADING STYLES*/
