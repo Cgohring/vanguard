@@ -105,8 +105,25 @@ h2 {
     color: var(--white);
     font-size: 1.75rem;
     font-weight: 600;
-    margin: 5vw 2vw 3vw 2vw;
+    padding: 5vw 3vw 3vw 3vw;
+    animation-name: descend-in;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
 
+}
+
+h3 {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.30rem;
+    padding: 3vw 1vw 3vw 3vw;
+    animation-name: descend-in;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
 }
 
 /*NAV STYLES*/
@@ -219,18 +236,60 @@ p {
     line-height: 1.5;
 }
 
+/*table styles*/
+table {
+    background-color: var(--black);
+    margin: 15px auto;
+    font-size: 1rem;
+    color: var(--white);
+    width: 100%;
+}
+
+th{ 
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 25px;
+    border: 1px solid var(--charcoal);
+    text-transform: capitalize;
+    
+}
+
+td {
+    padding: 20px 25px;
+    border: 1px solid var(--charcoal);
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: var(--charcoal);
+}
+
 /*CLASS STYLES*/
 .black-h2 {
     color: black;
 }
 
-.blue-background {
-    background-color: #007BFF;
-}
-
 .black-background {
     background-color: var(--black);
 }
+
+.blue-container {
+    background-color: var(--blue);
+    border-radius: 8px;
+    padding: 2.5vw;
+    margin: 3vw 0vw;
+    transition: transform .75s ease;
+}
+
+.blue-container:hover {
+    transform: translate(0, -8px);
+    cursor: default;
+ }
+
+ .h3-emphasis {
+    font-size: 1.75rem;
+    font-weight: 600;
+ }
 
 /*ID STYLES*/
 #consultation-button {
@@ -246,7 +305,7 @@ p {
     margin: 15px auto 0 auto;
     animation-name: descend-in;
     animation-timing-function: linear;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
     animation-direction: normal;
 }
@@ -257,6 +316,10 @@ p {
     cursor: default;
  }
 
+ #blue-background {
+    background-color: #007BFF;
+}
+
 #alt-p {
     color: var(--black);
 }
@@ -265,7 +328,7 @@ p {
     margin: 3vw;
     animation-name: descend-in;
     animation-timing-function: linear;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
     animation-direction: normal;
 }
