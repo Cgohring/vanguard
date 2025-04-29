@@ -89,20 +89,23 @@ header {
     background: var(--black);
     padding-top: 5vw;
     padding-bottom: 5vw;
-    box-shadow: 0 20px 25px var(--blue);
+    box-shadow: 0 8px 10px var(--blue);
+    position: relative;
 }
 
 /*HEADING STYLES*/
 h1 {
     color: var(--blue);
     font-size: 1.75rem;
-    
+    font-weight: 800;
+    padding-left: 2vw;
 }
 
 h2 {
     color: var(--white);
     font-size: 1.75rem;
     font-weight: 600;
+    margin: 5vw;
 }
 
 /*NAV STYLES*/
@@ -212,6 +215,8 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
 /*TEXT STYLES*/
 p {
     color: var(--white);
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 /*CLASS STYLES*/
@@ -247,7 +252,14 @@ p {
     color: var(--black);
 }
 
+#innovation {
+    margin: 3vw;
+}
 
+#blur {
+    padding:10px 10px 0 10px;
+    backdrop-filter: blur(10px);
+}
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 
 .container {
