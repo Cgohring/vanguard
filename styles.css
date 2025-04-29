@@ -161,7 +161,6 @@ nav li a {
       user-select: none;
   }
 
-
 /* BUILDS THE MIDDLE LILNE OF THE HAMBURGER */
 label span {
     background-color: white;
@@ -245,6 +244,11 @@ p {
     font-size: 1.25rem;
     padding: 20px;
     margin: 15px auto 0 auto;
+    animation-name: descend-in;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
 }
 
 #consultation-button:hover {
@@ -259,6 +263,11 @@ p {
 
 #innovation {
     margin: 3vw;
+    animation-name: descend-in;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
 }
 
 #blur {
@@ -299,12 +308,23 @@ p {
     animation-direction: alternate;
 }
 
+/*ANIMATION STYLES*/
+
 @keyframes logo-bounce {
     from {
         translate: 0 0;
     }
     to {
         translate: 0 10px;
+    }
+}
+
+@keyframes descend-in {
+    from {
+        translate: 0 -15px;
+    }
+    to {
+        translate: 0 0;
     }
 }
     
