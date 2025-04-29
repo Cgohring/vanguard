@@ -105,7 +105,8 @@ h2 {
     color: var(--white);
     font-size: 1.75rem;
     font-weight: 600;
-    margin: 5vw;
+    margin: 5vw 2vw 3vw 2vw;
+
 }
 
 /*NAV STYLES*/
@@ -242,11 +243,15 @@ p {
     display: inline-block;
     text-align: center;
     font-size: 1.25rem;
-    padding-top: 4vw;
-    padding-bottom: 4vw;
-    width: 65%;
-    margin: 0 auto;
+    padding: 20px;
+    margin: 15px auto 0 auto;
 }
+
+#consultation-button:hover {
+    transform: scale(1.05, 1.05);
+    background-color: var(--red);  
+    cursor: default;
+ }
 
 #alt-p {
     color: var(--black);
@@ -280,8 +285,6 @@ p {
     padding: 1rem;
     overflow: hidden;
 }
-
-
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
  #logo {
