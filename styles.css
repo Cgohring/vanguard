@@ -273,11 +273,6 @@ tr:nth-child(even) {
     background-color: var(--black);
 }
 
-.blue-background {
-    background-color: #007BFF;
-    /*padding-bottom: 15px;*/
-}
-
 .blue-container {
     background-color: var(--blue);
     border-radius: 8px;
@@ -338,6 +333,12 @@ tr:nth-child(even) {
     padding:10px 10px 0 10px;
     backdrop-filter: blur(10px);
 }
+
+#blue-background {
+    background-color: #007BFF;
+    padding-bottom: 15px;
+}
+
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 
 .container {
@@ -393,7 +394,7 @@ tr:nth-child(even) {
 }
     
 /* THIS ONE IS DONE FOR YOU */
-/*
+
 #bar-chart {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -406,10 +407,9 @@ tr:nth-child(even) {
     padding: 1rem;
     position: relative;
 }
-*/
+
 /* ADD ON TRANSITION ON HEIGHT */
 
-/*
 .bar {
     width: 50px;
     background: var(--charcoal);
@@ -418,11 +418,9 @@ tr:nth-child(even) {
     transition: ;
     height: 0;
 }
-*/
 
 /* THIS ONE IS DONE FOR YOU */
 
-/*
 .bar::after {
     content: attr(data-year);
     position: absolute;
@@ -442,14 +440,11 @@ tr:nth-child(even) {
     }
 }
 
-*/
 /* ADD ANIMATION ON stepUp for 1s ease-in-out forwards */
 
-/*
 .bar {
     animation: stepUp 1s ease-in-out forwards;
 }
-*/
 
 /* MEDIA QUERIES (MEDIUM) */ 
 
