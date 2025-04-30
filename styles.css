@@ -415,7 +415,7 @@ tr:nth-child(even) {
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: ;
+    transition: height 1s ease; 
     height: 0;
 }
 
