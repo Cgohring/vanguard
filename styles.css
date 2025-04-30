@@ -237,12 +237,12 @@ p {
 }
 
 /*table styles*/
+
 table {
     background-color: var(--black);
     margin: 15px auto;
     font-size: 1rem;
     color: var(--white);
-    width: 100%;
 }
 
 th{ 
@@ -271,6 +271,11 @@ tr:nth-child(even) {
 
 .black-background {
     background-color: var(--black);
+}
+
+.blue-background {
+    background-color: #007BFF;
+    /*padding-bottom: 15px;*/
 }
 
 .blue-container {
@@ -315,10 +320,6 @@ tr:nth-child(even) {
     background-color: var(--red);  
     cursor: default;
  }
-
- #blue-background {
-    background-color: #007BFF;
-}
 
 #alt-p {
     color: var(--black);
@@ -405,8 +406,9 @@ tr:nth-child(even) {
     padding: 1rem;
     position: relative;
 }
-    */
+*/
 /* ADD ON TRANSITION ON HEIGHT */
+
 /*
 .bar {
     width: 50px;
@@ -416,8 +418,10 @@ tr:nth-child(even) {
     transition: ;
     height: 0;
 }
-    */
+*/
+
 /* THIS ONE IS DONE FOR YOU */
+
 /*
 .bar::after {
     content: attr(data-year);
