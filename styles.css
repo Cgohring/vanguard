@@ -353,7 +353,7 @@ tr:nth-child(even) {
     backdrop-filter: blur(10px);
 }
 
-#blue-background {
+#results {
     background-color: #007BFF;
     padding-bottom: 15px;
 }
@@ -430,19 +430,19 @@ tr:nth-child(even) {
 
 @keyframes logo-bounce {
     from {
-        translate: 0 0;
+        transform: translate(0, 0);
     }
     to {
-        translate: 0 10px;
+        transform: translate(0, 10px);
     }
 }
 
 @keyframes descend-in {
     from {
-        translate: 0 -15px;
+        transform: translate(0, -15px);
     }
     to {
-        translate: 0 0;
+        transform: translate(0, 0);
     }
 }
     
