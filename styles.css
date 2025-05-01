@@ -353,7 +353,7 @@ tr:nth-child(even) {
     backdrop-filter: blur(10px);
 }
 
-#results {
+#blue-background {
     background-color: #007BFF;
     padding-bottom: 15px;
 }
@@ -493,8 +493,6 @@ tr:nth-child(even) {
     }
 }
 
-
-
 /* ADD ANIMATION ON stepUp for 1s ease-in-out forwards */
 
 .bar {
@@ -502,21 +500,55 @@ tr:nth-child(even) {
 }
 
 /* MEDIA QUERIES (MEDIUM) */ 
+@media screen and (min-width: 800px) {
 
-/*
-    #results {
-        grid-template-columns: 1fr 1fr;
+    #offer-grid  {
+        display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto auto;
+            gap: 1rem;
     }
+
+    .blue-container {
+        padding: 2.5vw;
+        margin: 0vw 0vw;
+    }
+
+    #white-background{
+        margin-bottom: 4rem;
+        background-color: var(--white);
+    }
+
+    #results {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "proven proven"
+        "table chart";
+    }
+
+    #proven-results {
+        grid-area: proven;
+    }
+
     .results-container {
         flex-direction: row;
         justify-content: space-between;
     }
     .results-table {
         width: 50%;
+        grid-area: table;
     }
     .bar-chart {
         width: 50%;
+        grid-area: chart;
     }
-*/
+}
 
 /* MEDIA QUERIES (LARGE) */
+
+/*@media screen and (min-width: 1024px) {
+
+}
+*/
