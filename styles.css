@@ -596,20 +596,6 @@ tr:nth-child(even) {
     .blue-background {
         padding-bottom: 5px;
     }
-
-    /*#results {
-        grid-template-columns: 1fr 1fr;
-    }
-    .results-container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .results-table {
-        width: 50%;
-    }
-    .bar-chart {
-        width: 50%;
-    }*/
 }
 
 /* MEDIA QUERIES (LARGE) */
@@ -622,4 +608,28 @@ tr:nth-child(even) {
         gap: 1rem;
     }
 
+    .blue-container {
+        padding: 1vw 1.5vw 1.5vw 1.5vw;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+        padding-left: 1.25vw;
+        padding-right: 1.25vw;
+        padding-bottom: 2vw;
+    }
+
+    #results {
+        row-gap: 0;
+    }
+
+    #contact-us form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    #contact-us button[type=submit] {
+        align-self: start;
+    }
 }
