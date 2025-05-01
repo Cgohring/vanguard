@@ -109,8 +109,6 @@ footer address, #phone {
     line-height: 1.5;
 }
 
-
-
 /*HEADING STYLES*/
 h1 {
     color: var(--blue);
@@ -195,7 +193,7 @@ nav li a {
       user-select: none;
   }
 
-/* BUILDS THE MIDDLE LILNE OF THE HAMBURGER */
+/* BUILDS THE MIDDLE LINE OF THE HAMBURGER */
 nav label span {
     background-color: white;
     display: block;
@@ -501,12 +499,16 @@ tr:nth-child(even) {
 /* MEDIA QUERIES (MEDIUM) */ 
 @media screen and (min-width: 800px) {
 
-    #header-nav {
-        align-items: normal;
-    }
+    /*HEADER STYLES*/
 
     header {
         padding-top: 3vw;
+    }
+
+    /*NAV STYLES*/
+
+    #header-nav {
+        align-items: normal;
     }
 
     nav label, nav input {
@@ -529,6 +531,8 @@ tr:nth-child(even) {
         display: inline-block;
     }
 
+    /*INNOVATION SECTION STYLES*/
+
     #innovation {
         padding-top: 0;
         padding-bottom: .75vw;
@@ -539,6 +543,8 @@ tr:nth-child(even) {
         padding-left: 5px;
         padding-right: 5px;
     }
+
+    /*WHAT WE OFFER SECTION STYLES*/
 
     #offer-grid  {
         display: grid;
@@ -564,6 +570,8 @@ tr:nth-child(even) {
         padding-left: 2.5vw;
         padding-right: 2.5vw;
     }
+
+    /*PROVEN RESULTS SECTION STYLES*/
 
     #results {
         display: grid;
@@ -601,6 +609,8 @@ tr:nth-child(even) {
 /* MEDIA QUERIES (LARGE) */
 
 @media screen and (min-width: 1024px) {
+
+    /*WHAT WE OFFER SECTION STYLES*/
     #offer-grid  {
         display: grid;
         grid-template-columns: auto auto auto;
@@ -619,10 +629,13 @@ tr:nth-child(even) {
         padding-bottom: 2vw;
     }
 
+    /*PROVEN RESULTS SECTION*/
+
     #results {
         row-gap: 0;
     }
 
+    /*FORM STYLES*/ 
     #contact-us form {
         display: grid;
         grid-template-columns: 1fr 1fr;
