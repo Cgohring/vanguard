@@ -116,7 +116,7 @@ h1 {
     color: var(--blue);
     font-size: 1.75rem;
     font-weight: 800;
-    padding-left: 2vw;
+    padding: 0 0 0 2vw;
 }
 
 h2 {
@@ -137,6 +137,7 @@ h3 {
     font-weight: 500;
     font-size: 1.30rem;
     padding: 3vw 1vw 3vw 3vw;
+    line-height: 1.25;
     animation-name: descend-in;
     animation-timing-function: linear;
     animation-duration: 1s;
@@ -149,8 +150,6 @@ h3 {
 #header-nav {
     display: grid;
     grid-template-columns: auto auto 1fr auto;
-    grid-template-rows: 1fr;
-    justify-content: left;
     align-items: center;
 }
 
@@ -174,13 +173,13 @@ nav ul {
 }
 
 nav li a {
-    display:block;
-    font-family:sans-serif;
-    font-size:1.5rem;
-    padding:1rem;
-    text-transform:uppercase;
-    font-weight:bold;
-    text-decoration:none;
+    display: block;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
     color: var(--blue);
     transition: background-color .3s ease-in;
     cursor: default;
@@ -197,7 +196,7 @@ nav li a {
   }
 
 /* BUILDS THE MIDDLE LILNE OF THE HAMBURGER */
-label span {
+nav label span {
     background-color: white;
     display: block;
     height: .25rem;
@@ -207,7 +206,7 @@ label span {
 }
 
 /* BUILDS THE TOP AND BOTTOM LINES OF THE HAMBURGER*/
-label span:before, label span:after {
+nav label span:before, nav label span:after {
     background: white;
     content: '';
     display: block;
@@ -216,13 +215,13 @@ label span:before, label span:after {
     transition: all .2s ease-out;
     width: 100%;
 }
-label span:before {
+nav label span:before {
     top: .75rem;
 }
-label span:after {
+nav label span:after {
     top: -.75rem;
 }
-input {
+nav input {
   display:none;
 }
 
@@ -353,7 +352,7 @@ tr:nth-child(even) {
     backdrop-filter: blur(10px);
 }
 
-#blue-background {
+.blue-background {
     background-color: #007BFF;
     padding-bottom: 15px;
 }
@@ -502,21 +501,68 @@ tr:nth-child(even) {
 /* MEDIA QUERIES (MEDIUM) */ 
 @media screen and (min-width: 800px) {
 
+    #header-nav {
+        align-items: normal;
+    }
+
+    header {
+        padding-top: 3vw;
+    }
+
+    nav label, nav input {
+        display: none;
+    }
+
+    nav h2 {
+        position: absolute;
+    }
+    
+    nav ul {
+        max-height: none;
+        display: flex; 
+        justify-content: flex-end;
+        margin-left: 1rem;
+        margin-top: -1.5vw;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    #innovation {
+        padding-top: 0;
+        padding-bottom: .75vw;
+        margin-top: 1.5vw;
+    }
+
+    #blur {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
     #offer-grid  {
         display: grid;
-            grid-template-columns: auto auto;
-            grid-template-rows: auto auto auto;
-            gap: 1rem;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        gap: 1rem;
+        margin-top: 1vw;
     }
 
     .blue-container {
-        padding: 2.5vw;
-        margin: 0vw 0vw;
+        padding: 2vw;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     #white-background{
         margin-bottom: 4rem;
         background-color: var(--white);
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        padding-left: 2.5vw;
+        padding-right: 2.5vw;
     }
 
     #results {
@@ -525,30 +571,55 @@ tr:nth-child(even) {
         grid-template-rows: auto auto;
         grid-template-areas: 
         "proven proven"
-        "table chart";
+        "results-table chart";
+        gap: 2rem;
     }
 
     #proven-results {
         grid-area: proven;
     }
 
+    results-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .results-table {
+        grid-area: results-table;
+    }
+
+    .bar-chart {
+        grid-area: chart;
+        
+    }
+
+    .blue-background {
+        padding-bottom: 5px;
+    }
+
+    /*#results {
+        grid-template-columns: 1fr 1fr;
+    }
     .results-container {
         flex-direction: row;
         justify-content: space-between;
     }
     .results-table {
         width: 50%;
-        grid-area: table;
     }
     .bar-chart {
         width: 50%;
-        grid-area: chart;
-    }
+    }*/
 }
 
 /* MEDIA QUERIES (LARGE) */
 
-/*@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
+    #offer-grid  {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        gap: 1rem;
+    }
 
 }
-*/
